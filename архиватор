@@ -1,0 +1,7 @@
+{$reference 'System.IO.Compression.FileSystem.dll}
+program pr_zip;
+uses System;
+uses System.IO.Compression;
+begin
+ //system.io.compression.ZipFile.CreateFromDirectory(String, String)//прописать пути
+end.
