@@ -3,6 +3,7 @@ program pr_zip;
 uses System;
 uses System.IO.Compression;
 begin
- system.io.compression.ZipFile.CreateFromDirectory('C:\PABCWork.NET\Output\Архив для тренировки', 'C:\PABCWork.NET\Output\Архив для тренировки.rar')   //прописал пути
+ var (a,b):=ReadlnString2('Введите путь к папке и имя будущего архива(его полный путь + имя.rar)');
+ system.io.compression.ZipFile.CreateFromDirectory(a, b);
  
 end.
