@@ -1,4 +1,4 @@
-{$reference 'System.IO.Compression.FileSystem.dll}
+{$reference 'System.IO.Compression.FileSystem.dll'}
 program pr_zip;
 uses System;
 uses System.IO.Compression;
