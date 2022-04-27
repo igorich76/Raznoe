@@ -1,9 +1,9 @@
 {$reference 'System.IO.Compression.FileSystem.dll'}
-program pr_zip;
 uses System;
 uses System.IO.Compression;
+
 begin
- var (a,b):=ReadlnString2('Введите путь к папке и имя будущего архива(его полный путь + имя.zip)');
- system.io.compression.ZipFile.CreateFromDirectory(a, b);
- 
+  var a := ReadlnString('Введите путь к папке и имя будущего архива(его полный путь + имя.zip)'#13#10);
+  ZipFile.CreateFromDirectory(a, a + '.zip');
+  Println('Готово!');
 end.
