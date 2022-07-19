@@ -1,0 +1,15 @@
+uses PT4;
+
+begin
+  Task('AInteger12');
+  var n := ReadInteger;
+  var m := 0;
+  var a: byte;
+  while n > 0 do
+  begin
+    a := n mod 10;
+    m := m * 10 + a;
+    n := n div 10;
+  end;
+  m.Print;
+end.
