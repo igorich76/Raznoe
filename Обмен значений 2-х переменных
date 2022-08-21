@@ -1,0 +1,31 @@
+////////////////первый вариант (с доп. переменной)////////////
+##
+var (x,y) := ReadlnInteger2('Введите 2 числа');
+var z := 0;
+Println('x=',x);
+Println('y=',y);
+z := x;
+x := y;
+y := z;
+Println('x=',x);
+Println('y=',y);
+
+/////////////ещё вариант (без доп. переменной)///////////
+##
+var (x,y) := ReadlnInteger2('Введите 2 числа>>');
+var z := 0;
+Println('x=',x);
+Println('y=',y);
+x := x+y;
+y := x-y;
+x := x-y;
+Println('x=',x);
+Println('y=',y);
+////////////////вариант бомба!!!!!////////////
+##
+var (x,y) := ReadlnInteger2('Введите 2 числа');
+Println('x=',x);
+Println('y=',y);
+(x,y) := (y,x);  //вот за что я люблю abc.net!
+Println('x=',x);
+Println('y=',y);
