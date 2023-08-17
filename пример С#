@@ -3,4 +3,4 @@ class HelloWorld {
     System.Console.WriteLine("Hello, World!");
   }
 }
-//только нужно расширение нужно поменять на ".cs"
+//только расширение файла нужно поменять на ".cs"
