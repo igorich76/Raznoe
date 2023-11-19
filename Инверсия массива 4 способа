@@ -1,0 +1,20 @@
+##
+var a := ArrRandom(10);
+var n := a.Length;
+a.Println;
+// способ 1:
+{for var i:=0 to n div 2-1 do
+  Swap(a[i], a[n-i-1]);
+a.Print;}
+// способ 2:
+{var b := new integer[n];
+for var i:=0 to n-1 do
+  b[i] := a[n-i-1];
+a := b;
+a.Print;}
+// способ 3:
+{Reverse(a);
+a.Print;}
+// способ 4:
+a := a[::-1];
+a.Print;
