@@ -1,0 +1,21 @@
+##
+// в одномерном массиве удалить все равные элементы, оставив только один
+//из данныых групп равных. Эл-ты массива вводить с клавиатуры
+var N := ReadInteger;
+var a := ReadArrInteger(N);
+var b := new integer[N];
+var f: boolean;
+b[1] := a[1];
+var M := 1;
+for var i:=1 to N-1 do
+  begin
+    f := true;
+    for var j:=1 to M do 
+      if (a[i] = b[j]) then f := false;
+    if (f = true) then
+      begin
+        M := M + 1;
+        b[M] := a[i];
+      end;
+  end;
+  for var i:=1 to M do Print(b[i]); 
