@@ -1,0 +1,10 @@
+// в инете нашёл алгоритм на другом ЯПе. Сделал на pabc
+##
+var a := ReadlnInteger('Введите число:');
+var s := '';
+while a>0 do
+  begin
+    s += a mod 2;
+    a := a div 2;
+  end;
+s.Reverse.Print;
