@@ -1,0 +1,22 @@
+// простое число в диапазоне от а до б
+##
+var (a,b) := (ReadInteger,ReadInteger);
+for var i:=a to b do
+  begin
+    var count := 0;
+    for var j:=1 to b do
+      begin
+        if i mod j = 0 then count += 1
+      end;
+     if count = 2 then Println(i);
+  end;   
+
+//////////////////////////////////////////////
+
+// простое ли вводимое число?
+##
+var (n,cnt) := (ReadInteger,0);
+for var i:=1 to n do
+  if (n mod i = 0) and (n > 1) and (n mod 1 = 0) then cnt += 1;
+if cnt = 2 then Print('Число',n,'простое!')
+  else Print('Нет!')
