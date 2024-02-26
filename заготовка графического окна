@@ -1,0 +1,7 @@
+##
+uses WPFObjects,GraphWPF;
+Window.Title := 'Движение по траектории';
+Window.SetSize(640,480);
+Window.CenterOnScreen;
+Brush.Color := Colors.Black;
+Rectangle(10,10,Window.Width-20,Window.Height-20);
