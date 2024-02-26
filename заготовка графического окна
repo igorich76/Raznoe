@@ -1,7 +1,13 @@
 ##
 uses WPFObjects,GraphWPF;
-Window.Title := 'Движение по траектории';
+//
+Window.Title := 'Солнечная система';
 Window.SetSize(640,480);
 Window.CenterOnScreen;
-Brush.Color := Colors.Black;
+Brush.Color := Colors.LightBlue;
 Rectangle(10,10,Window.Width-20,Window.Height-20);
+//
+Circle(Window.Width/2,window.Height/2,200);
+Circle(Window.Width/2,window.Height/2,50,colors.Yellow);
+Circle(120,240,20,Colors.Blue);
+//
