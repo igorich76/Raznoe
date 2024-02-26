@@ -9,6 +9,8 @@ Rectangle(10,10,Window.Width-20,Window.Height-20);
 //
 Pen.Color := Colors.Red;
 Circle(Window.Width/2,window.Height/2,200);
+Pen.Color := Colors.Black;
 Circle(Window.Width/2,window.Height/2,50,colors.Yellow);
+Pen.Color := Colors.Black;
 Circle(120,240,20,Colors.Blue);
 //
