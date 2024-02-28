@@ -1,0 +1,20 @@
+## //часовая стрелка
+uses WPFObjects,GraphWPF;
+//
+Window.Title := 'Часы';
+Window.SetSize(640,480);
+Window.CenterOnScreen;
+Brush.Color := Colors.LightBlue;
+Rectangle(10,10,Window.Width-20,Window.Height-20);
+//
+Circle(Window.Width/2,window.Height/2,20);
+var (x,y,a,xc,yc) := (320,240,0.0,520,240);
+//
+repeat
+  var hourHand := new LineWPF(x,y,xc,yc,colors.Black);
+  xc := Round(x+200*Cos(a));
+  yc := Round(y+200*Sin(a));
+  Sleep(10);
+  a := a+Pi/100;
+  hourHand.Destroy;
+until false;
