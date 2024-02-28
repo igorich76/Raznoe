@@ -8,7 +8,7 @@ Brush.Color := Colors.LightBlue;
 Rectangle(10,10,Window.Width-20,Window.Height-20);
 //
 Circle(Window.Width/2,window.Height/2,20);
-var (x,y,a,xc,yc) := (320,240,36.125,520,240);
+var (x,y,a,xc,yc) := (320,240,36.125,320,40);
 //
 repeat
   var hourHand := new LineWPF(x,y,xc,yc,colors.Black);
