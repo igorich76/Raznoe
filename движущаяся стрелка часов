@@ -8,13 +8,14 @@ Brush.Color := Colors.LightBlue;
 Rectangle(10,10,Window.Width-20,Window.Height-20);
 //
 Circle(Window.Width/2,window.Height/2,20);
-var (x,y,a,xc,yc) := (320,240,36.125,320,40);
+var (x,y,a,xc,yc) := (320,240,36.125,320,240);
 //
-repeat
-  var hourHand := new LineWPF(x,y,xc,yc,colors.Black);
+while true do
+begin
+  var Ln := new LineWPF(x,y,xc,yc,colors.Black);
   xc := Round(x+200*Cos(a));
   yc := Round(y+200*Sin(a));
-  Sleep(10);
+  Sleep(100);
   a := a+Pi/100;
-  hourHand.Destroy;
-until false;
+  Ln.Destroy;
+end;
