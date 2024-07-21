@@ -1,0 +1,13 @@
+// сам вс сделал, нигде не смотрел 21-07-2024
+##
+function Fib(n: integer): integer;
+begin
+var mass := new integer[n];
+mass[0] := 0;
+mass[1] := 1;
+for var i := 2 to Length(mass)-1 do mass[i] := mass[i-1] + mass[i-2];
+mass.Print;
+end;
+//
+var n := ReadInteger;
+Fib(n);
